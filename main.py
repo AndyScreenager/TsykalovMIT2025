@@ -1,9 +1,12 @@
 def fib(n: int) -> int:
-    if n == 1 or n == 2:
+    if n == 0:
+        return 0
+    if n == 1:
         return 1
     return fib(n - 1) + fib(n - 2)
 
 
 print('Hello, World!')
 n = int(input('n = '))
-print(f'fib({n}) = {fib(n - 1)}')
+for i in range(n):
+    print(f'{fib(i)}')
