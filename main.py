@@ -6,4 +6,4 @@ def fib(n: int) -> int:
 
 print('Hello, World!')
 n = int(input('n = '))
-print(f'fib({n}) = {fib(n)}')
+print(f'fib({n}) = {fib(n - 1)}')
